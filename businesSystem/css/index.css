@@ -85,13 +85,150 @@ body{
     transition: 0.5s;
 }
 
+@keyframes animate{
+    from{opacity : 1;}
+    from{opacity : 0;}
+}
+
+.modalHeader{
+    font-family: 'Lexend', sans-serif;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+
+}
+
+.modalHeader p{
+    margin-left: 41%;
+}
+
+.fechar{
+    margin-right: 30px ;
+}
+
+.modalLogin {
+    width: 610px;
+    height: 490px;
+    background: linear-gradient(to bottom, rgb(20, 140, 167), #fff 70%);
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate;
+    animation-duration: 0.5s;
+    box-shadow: 10px 13px 0px 9000px rgba(62, 82, 88, 0.516);
+    border-radius: 20px;
+}
+
+.enterButton{
+    margin: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.enterButton0{
+    width: 420px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #55c0d8;
+    
+}
+
+.modalCadastro {
+    width: 610px;
+    height: 490px;
+    background: linear-gradient(to bottom, rgb(20, 140, 167), #fff 70%);
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate;
+    animation-duration: 0.5s;
+    box-shadow: 10px 13px 0px 9000px rgba(62, 82, 88, 0.516);
+    border-radius: 20px;
+}
+
+.fechar{
+    float: right;
+    cursor: pointer;
+}
+
+.modalInputs p{
+    font-family: 'Lexend', sans-serif;
+    color: #353535;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px
+
+}
+
+.modalInputs input{
+    width: 420px;
+    height: 65px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #353535;
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+
+.modalImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+::placeholder{
+    font-family: 'Lexend', sans-serif;
+    color: #999999;
+    font-size: 22px;
+    font-weight: 200;
+    padding-left: 20px;
+}
+
+.modalLogin:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 .imgNav{
     margin: 0;
     margin-left: 95px;
 }
 
 .mainLeft{
-    /* border: 1px solid green; */
     font-family: 'Lexend', sans-serif;
 }
 

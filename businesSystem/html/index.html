@@ -24,20 +24,49 @@
                     </li>
 
                     <li>
-                        <div class="navButton" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <a href="#login-modal"></a>Já possui login?
+                        <div onclick="acao()" class="navButton"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="#loginModal"></a>Já possui login?
                         </div>
                     </li>
+
                 </ul>
             </div>
         </nav>
     </header>
 
 
-    <div id="login-modal" class="modalLogin">
-        <div>
+        <div id="loginModal" class="modalLogin">
+            <div class="modal_content">
+        
+                <div class="modalHeader">
+                    <p>Entrar</p>
+                    <img onclick="fechar()" class="fechar" src="../img/Group 32.svg" alt="">
+                </div>
 
+                <div class="modalContent">
+                    
+                    <div class="modalInputs">
+                        <form action="" >
+                            <p>Email:</p>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Ex.: email@email.com">
+                            <p>Senha:</p>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="********">
+                            <div class="enterButton">
+                                <button type="submit" class="enterButton0">Entrar</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="modalImage">
+                    <img src="../img/LOGO AZUL.svg" alt="">
+                </div>
+                    
+            </div>
+                
         </div>
+
     </div>
 
 
@@ -63,8 +92,52 @@
                     </div>
 
                     <div class="botaoMain">
-                        <button class="mainButton" type="button">Crie uma conta!<img src="../img/Seta.png" alt=""> </button>
+                        <button onclick="acaoTwo()" class="mainButton" type="button">Crie uma conta!<img src="../img/Seta.png" alt=""> </button>
                     </div>
+
+                    <!-- MODAL CADASTRO -->
+
+                    <div id="loginModal" class="modalCadastro">
+                        <div class="modal_content">
+                    
+                            <div class="modalHeader">
+                                <p>Cadastro</p>
+                                <img onclick="fecharTwo()" class="fechar" src="../img/Group 32.svg" alt="">
+                            </div>
+            
+                            <div class="modalContent">
+                                
+                                <div class="modalInputs">
+                                    <form action="" >
+                                        <p>Nome da Empresa:</p>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Ex.: email@email.com">
+                                        <p>Email:</p>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Ex.: email@email.com">
+                                        <p>Email:</p>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Ex.: email@email.com">
+                                        <p>Senha:</p>
+                                        <input type="password" class="form-control" name="password" id="password" placeholder="********">
+                                        <div class="enterButton">
+                                            <button type="submit" class="enterButton0">Entrar</button>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <div class="modalImage">
+                                <img src="../img/LOGO AZUL.svg" alt="">
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+
+                    <!-- MODAL CADASTRO -->
+                
+                    </div>
+
+
                     
                 </div>
 
@@ -180,6 +253,7 @@
 
             </footer>
 
+            <script src="../js/script.js"></script>
     
 </body>
 </html>
