@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+}
+
+.nav-bar{
+    width: 80px;
+    height: 100vh;
+    background-color: #fff;
+    border: 1px solid green;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0 12px ;
+}
+
+.navbar a{
+    padding: 12px ;
+}
+
+.logo{
+    padding-top: 20px;
+}
+
+.container{
+    height: 100%;
+}
+
