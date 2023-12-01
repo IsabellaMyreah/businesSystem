@@ -114,9 +114,9 @@ body{
 .modalLogin {
     width: 610px;
     height: 490px;
-    background: linear-gradient(to bottom, rgb(20, 140, 167), #fff 70%);
+    background: linear-gradient(to bottom, rgb(20, 140, 167), rgb(210, 235, 240) 70%);
     display: none;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -125,6 +125,7 @@ body{
     box-shadow: 10px 13px 0px 9000px rgba(62, 82, 88, 0.516);
     border-radius: 20px;
 }
+
 
 .enterButton{
     margin: 0;
@@ -152,10 +153,10 @@ body{
 
 .modalCadastro {
     width: 610px;
-    height: 490px;
-    background: linear-gradient(to bottom, rgb(20, 140, 167), #fff 70%);
+    height: 770px;
+    background: linear-gradient(to bottom, rgb(41, 155, 180), rgb(49, 107, 117) 70%);
     display: none;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -196,11 +197,44 @@ body{
 
 }
 
+.modalInputs01 input{
+    width: 420px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #353535;
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+
+.modalInputs01 p{
+    font-family: 'Lexend', sans-serif;
+    color: #353535;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px
+
+}
+
 .modalImage{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+
+.modalImage01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
 }
 
 ::placeholder{
@@ -210,6 +244,7 @@ body{
     font-weight: 200;
     padding-left: 20px;
 }
+
 
 .modalLogin:target{
     visibility: visible;
