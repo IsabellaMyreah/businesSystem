@@ -1,6 +1,8 @@
 const wrapper = document.getElementById("wrapper");
+const totalEmployeeDiv = document.getElementById('totalEmployee');
 
 let employees = [];
+let totalEmployees = employees.length;
 
 const titles = `        
 <div class="titles">
@@ -93,6 +95,8 @@ async function fetchData() {
       employees = data;
       console.log(employees);
       generateRow();
+      totalEmployees = employees.length;
+      totalEmployeeDiv.innerText = totalEmployees;
     });
 }
 
