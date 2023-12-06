@@ -1,6 +1,8 @@
 const wrapper = document.getElementById("wrapper");
+const totalDiv = document.getElementById("totalDiv");
 
 let products = [];
+let total = products.length;
 
 const titles = `        
   <div class="titles">
@@ -28,14 +30,16 @@ function generateRow() {
   wrapper.innerHTML = "";
   wrapper.innerHTML += titles;
 
-
   products.map((item) => {
     let div = document.createElement("div");
 
     const date = new Date(item.createdAt);
 
-    const dateFormated = `${(date.getDate()).toString().padStart(2, '0')}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getFullYear()}`;
-    
+    const dateFormated = `${date.getDate().toString().padStart(2, "0")}/${(
+      date.getMonth() + 1
+    )
+      .toString()
+      .padStart(2, "0")}/${date.getFullYear()}`;
 
     div.innerHTML += `
     <div class="info">
@@ -82,8 +86,9 @@ async function fetchData() {
     .then((response) => response.json())
     .then((data) => {
       products = data;
-      console.log(products);
       generateRow();
+      total = products.length;
+      totalDiv.innerText = total;
     });
 }
 

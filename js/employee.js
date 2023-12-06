@@ -1,5 +1,5 @@
 const wrapper = document.getElementById("wrapper");
-const totalEmployeeDiv = document.getElementById('totalEmployee');
+const totalEmployeeDiv = document.getElementById('totalDiv');
 
 let employees = [];
 let totalEmployees = employees.length;
