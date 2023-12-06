@@ -244,6 +244,8 @@ body{width: 100vw;
 }
 
 .titles{
+    position: sticky;
+    top: 0;
     color: #47555E;
     font-size: 13px;
     font-weight: 600;
@@ -256,7 +258,6 @@ body{width: 100vw;
     padding-left: 15px;
     padding-right: 16%;
     background-color: #f1f1f1 ;
-
 }
 
 .id{
@@ -335,4 +336,9 @@ body{width: 100vw;
 
 .numbers{
     font-size: 20px;
+}
+
+#wrapper {
+    overflow-y: scroll;
+    min-height: 600px;
 }
