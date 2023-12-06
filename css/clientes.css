@@ -243,7 +243,10 @@ body{width: 100vw;
     font-family: 'Lexend', sans-serif;
 }
 
-.titles{
+.titles
+{
+    position: static;
+    top: 0;
     color: #47555E;
     font-size: 13px;
     font-weight: 600;
@@ -335,4 +338,9 @@ body{width: 100vw;
 
 .numbers{
     font-size: 20px;
+}
+
+#wrapper {
+    overflow-y: scroll;
+    min-height: 600px;
 }

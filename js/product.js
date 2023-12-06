@@ -64,7 +64,7 @@ function generateRow() {
 
       <div class="icons">
           <a href=""><img src="../img/pen.svg" alt=""></a>
-          <a href="#" onclick="fetchDeleteByItem(${item.id})"><img src="../img/lixo.svg" alt=""></a>
+          <a href="#" onclick="deleteByItem(${item.id})"><img src="../img/lixo.svg" alt=""></a>
       </div>
     </div>
     `;
@@ -73,7 +73,7 @@ function generateRow() {
   });
 }
 
-async function fetchDeleteByItem(id) {
+async function deleteByItem(id) {
   await fetch(`http://localhost:3000/product/${id}`, { method: "DELETE" }).then(
     () => {
       fetchData();
