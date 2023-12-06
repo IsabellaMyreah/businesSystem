@@ -238,6 +238,8 @@ body{width: 100vw;
 }
 
 .titles{
+    position: sticky;
+    top: 0;
     color: #47555E;
     font-size: 13px;
     font-weight: 600;
@@ -293,4 +295,9 @@ body{width: 100vw;
     align-items: center;
     gap: 10px;
     padding-right: 10px;
+}
+
+#wrapper {
+    overflow-y: scroll;
+    min-height: 500px;
 }
