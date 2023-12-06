@@ -27,8 +27,15 @@ const titles = `
 function generateRow() {
   wrapper.innerHTML = "";
   wrapper.innerHTML += titles;
+
+
   products.map((item) => {
     let div = document.createElement("div");
+
+    const date = new Date(item.createdAt);
+
+    const dateFormated = `${(date.getDate()).toString().padStart(2, '0')}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getFullYear()}`;
+    
 
     div.innerHTML += `
     <div class="info">
@@ -39,15 +46,15 @@ function generateRow() {
           </div>
 
           <div class="nameInfo">
-              <p>Kit Festa 01</p>
+              <p>${item.name}</p>
           </div>
 
           <div class="valorInfo">
-              <p>R$ 100,00</p>
+              <p>R$ ${item.value}</p>
           </div>
 
           <div class="dataInfo">
-              <p>24/11/2023</p>
+              <p>${dateFormated}</p>
           </div>
       </div>
 
